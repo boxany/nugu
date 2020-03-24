@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nugu.WebAPI", "Nugu.WebAPI\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nugu.WebAPI.Library", "Nugu.WebAPI.Library\Nugu.WebAPI.Library.csproj", "{63FDACE4-D912-4BEB-B251-D0333EEDC7FB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nugu.BL", "..\common\Nugu.BL\Nugu.BL.csproj", "{CEABAABD-8E7A-4A18-8093-05A11BC7A294}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -44,5 +46,17 @@ Global
 		{63FDACE4-D912-4BEB-B251-D0333EEDC7FB}.Release|x64.Build.0 = Release|Any CPU
 		{63FDACE4-D912-4BEB-B251-D0333EEDC7FB}.Release|x86.ActiveCfg = Release|Any CPU
 		{63FDACE4-D912-4BEB-B251-D0333EEDC7FB}.Release|x86.Build.0 = Release|Any CPU
+		{CEABAABD-8E7A-4A18-8093-05A11BC7A294}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEABAABD-8E7A-4A18-8093-05A11BC7A294}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEABAABD-8E7A-4A18-8093-05A11BC7A294}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{CEABAABD-8E7A-4A18-8093-05A11BC7A294}.Debug|x64.Build.0 = Debug|Any CPU
+		{CEABAABD-8E7A-4A18-8093-05A11BC7A294}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{CEABAABD-8E7A-4A18-8093-05A11BC7A294}.Debug|x86.Build.0 = Debug|Any CPU
+		{CEABAABD-8E7A-4A18-8093-05A11BC7A294}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEABAABD-8E7A-4A18-8093-05A11BC7A294}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CEABAABD-8E7A-4A18-8093-05A11BC7A294}.Release|x64.ActiveCfg = Release|Any CPU
+		{CEABAABD-8E7A-4A18-8093-05A11BC7A294}.Release|x64.Build.0 = Release|Any CPU
+		{CEABAABD-8E7A-4A18-8093-05A11BC7A294}.Release|x86.ActiveCfg = Release|Any CPU
+		{CEABAABD-8E7A-4A18-8093-05A11BC7A294}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
