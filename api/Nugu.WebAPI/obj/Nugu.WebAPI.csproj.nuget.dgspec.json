@@ -1,17 +1,74 @@
 {
   "format": 1,
   "restore": {
-    "/mnt/c/_repos/nugu/api/Nugu.WebAPI/Nugu.WebAPI.csproj": {}
+    "/c/_repos/nugu/api/Nugu.WebAPI/Nugu.WebAPI.csproj": {}
   },
   "projects": {
-    "/mnt/c/_repos/nugu/api/Nugu.WebAPI/Nugu.WebAPI.csproj": {
+    "/c/_repos/nugu/api/Nugu.WebAPI.Library/Nugu.WebAPI.Library.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/mnt/c/_repos/nugu/api/Nugu.WebAPI/Nugu.WebAPI.csproj",
-        "projectName": "Nugu.WebAPI",
-        "projectPath": "/mnt/c/_repos/nugu/api/Nugu.WebAPI/Nugu.WebAPI.csproj",
+        "projectUniqueName": "/c/_repos/nugu/api/Nugu.WebAPI.Library/Nugu.WebAPI.Library.csproj",
+        "projectName": "Nugu.WebAPI.Library",
+        "projectPath": "/c/_repos/nugu/api/Nugu.WebAPI.Library/Nugu.WebAPI.Library.csproj",
         "packagesPath": "/home/hany/.nuget/packages/",
-        "outputPath": "/mnt/c/_repos/nugu/api/Nugu.WebAPI/obj/",
+        "outputPath": "/c/_repos/nugu/api/Nugu.WebAPI.Library/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/hany/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "/c/_repos/nugu/common/Nugu.BL/Nugu.BL.csproj": {
+                "projectPath": "/c/_repos/nugu/common/Nugu.BL/Nugu.BL.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.102/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/c/_repos/nugu/api/Nugu.WebAPI/Nugu.WebAPI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/c/_repos/nugu/api/Nugu.WebAPI/Nugu.WebAPI.csproj",
+        "projectName": "Nugu.WebAPI",
+        "projectPath": "/c/_repos/nugu/api/Nugu.WebAPI/Nugu.WebAPI.csproj",
+        "packagesPath": "/home/hany/.nuget/packages/",
+        "outputPath": "/c/_repos/nugu/api/Nugu.WebAPI/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/hany/.nuget/NuGet/NuGet.Config"
@@ -24,7 +81,11 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "projectReferences": {}
+            "projectReferences": {
+              "/c/_repos/nugu/api/Nugu.WebAPI.Library/Nugu.WebAPI.Library.csproj": {
+                "projectPath": "/c/_repos/nugu/api/Nugu.WebAPI.Library/Nugu.WebAPI.Library.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -53,6 +114,59 @@
               "privateAssets": "all"
             }
           },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.102/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/c/_repos/nugu/common/Nugu.BL/Nugu.BL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/c/_repos/nugu/common/Nugu.BL/Nugu.BL.csproj",
+        "projectName": "Nugu.BL",
+        "projectPath": "/c/_repos/nugu/common/Nugu.BL/Nugu.BL.csproj",
+        "packagesPath": "/home/hany/.nuget/packages/",
+        "outputPath": "/c/_repos/nugu/common/Nugu.BL/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/hany/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
           "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.102/RuntimeIdentifierGraph.json"
         }
       }

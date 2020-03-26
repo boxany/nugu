@@ -1,11 +1,48 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.1": {}
+    ".NETCoreApp,Version=v3.1": {
+      "Nugu.BL/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Nugu.BL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Nugu.BL.dll": {}
+        }
+      },
+      "Nugu.WebAPI.Library/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Nugu.BL": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Nugu.WebAPI.Library.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Nugu.WebAPI.Library.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Nugu.BL/1.0.0": {
+      "type": "project",
+      "path": "../../common/Nugu.BL/Nugu.BL.csproj",
+      "msbuildProject": "../../common/Nugu.BL/Nugu.BL.csproj"
+    },
+    "Nugu.WebAPI.Library/1.0.0": {
+      "type": "project",
+      "path": "../Nugu.WebAPI.Library/Nugu.WebAPI.Library.csproj",
+      "msbuildProject": "../Nugu.WebAPI.Library/Nugu.WebAPI.Library.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.1": []
+    ".NETCoreApp,Version=v3.1": [
+      "Nugu.WebAPI.Library >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "/home/hany/.nuget/packages/": {}
@@ -13,11 +50,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/mnt/c/_repos/nugu/api/Nugu.WebAPI/Nugu.WebAPI.csproj",
+      "projectUniqueName": "/c/_repos/nugu/api/Nugu.WebAPI/Nugu.WebAPI.csproj",
       "projectName": "Nugu.WebAPI",
-      "projectPath": "/mnt/c/_repos/nugu/api/Nugu.WebAPI/Nugu.WebAPI.csproj",
+      "projectPath": "/c/_repos/nugu/api/Nugu.WebAPI/Nugu.WebAPI.csproj",
       "packagesPath": "/home/hany/.nuget/packages/",
-      "outputPath": "/mnt/c/_repos/nugu/api/Nugu.WebAPI/obj/",
+      "outputPath": "/c/_repos/nugu/api/Nugu.WebAPI/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/hany/.nuget/NuGet/NuGet.Config"
@@ -30,7 +67,11 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "/c/_repos/nugu/api/Nugu.WebAPI.Library/Nugu.WebAPI.Library.csproj": {
+              "projectPath": "/c/_repos/nugu/api/Nugu.WebAPI.Library/Nugu.WebAPI.Library.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

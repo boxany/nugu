@@ -25,6 +25,16 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
+      },
+      "Nugu.BL/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Nugu.BL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Nugu.BL.dll": {}
+        }
       }
     }
   },
@@ -172,11 +182,17 @@
         "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
+    },
+    "Nugu.BL/1.0.0": {
+      "type": "project",
+      "path": "../../common/Nugu.BL/Nugu.BL.csproj",
+      "msbuildProject": "../../common/Nugu.BL/Nugu.BL.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
-      "NETStandard.Library >= 2.0.3"
+      "NETStandard.Library >= 2.0.3",
+      "Nugu.BL >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -185,11 +201,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/mnt/c/_repos/nugu/api/Nugu.WebAPI.Library/Nugu.WebAPI.Library.csproj",
+      "projectUniqueName": "/c/_repos/nugu/api/Nugu.WebAPI.Library/Nugu.WebAPI.Library.csproj",
       "projectName": "Nugu.WebAPI.Library",
-      "projectPath": "/mnt/c/_repos/nugu/api/Nugu.WebAPI.Library/Nugu.WebAPI.Library.csproj",
+      "projectPath": "/c/_repos/nugu/api/Nugu.WebAPI.Library/Nugu.WebAPI.Library.csproj",
       "packagesPath": "/home/hany/.nuget/packages/",
-      "outputPath": "/mnt/c/_repos/nugu/api/Nugu.WebAPI.Library/obj/",
+      "outputPath": "/c/_repos/nugu/api/Nugu.WebAPI.Library/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/hany/.nuget/NuGet/NuGet.Config"
@@ -202,7 +218,11 @@
       },
       "frameworks": {
         "netstandard2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "/c/_repos/nugu/common/Nugu.BL/Nugu.BL.csproj": {
+              "projectPath": "/c/_repos/nugu/common/Nugu.BL/Nugu.BL.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
