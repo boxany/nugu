@@ -12,5 +12,7 @@ namespace Nugu.BL
         public string ServiceId { get; set; }
         public DateTime StartdDate { get; set; }
         public int StatusCd { get; set; }
+
+        
     }
 }
